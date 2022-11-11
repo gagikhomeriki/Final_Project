@@ -922,6 +922,14 @@ form{
         margin-top: 50px;
     }
 
+    .section_two_box_xidi h2{
+        padding: 15px;
+    }
+
+    .section_two_box_wood h2{
+        padding: 15px;
+    }
+
     .section_last_boxx{
         display: flex;
         flex-direction: column;
