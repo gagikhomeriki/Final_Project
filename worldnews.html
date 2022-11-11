@@ -13,7 +13,7 @@
         <header class="header_two">
             <a href="index.html"><img src="./images/LOGO.svg" alt="ლოგო" class="Logo_image"></a>
             <nav class="navbar">
-                <ul>
+                <ul class="ul_ul">
                     <a href="index.html"><li >Home</li></a>
                     <li class="li_worldnews">World News</li>
                     <li>Photos</li>
@@ -21,6 +21,7 @@
                     <li><img src="./images/christopher-cam.png" alt="პროფილის ფოტო"></li>
                 </ul>
             </nav>
+            <img id="burger_menu" src="./images/filter.svg" alt="">
         </header>
         <div class="worldnews_box">
             <div class="worldnews_box_1">
@@ -43,11 +44,14 @@
             </div>
             <div class="worldnews_picture_text_second">
                 <div class="boxlabelinput">
-                    <label for="date">Select Date</label>
-                    <input type="date" name="Select Date" id="select_date">
+                    <form>
+                        <label for="number">Select Date</label>
+                    <input type="number" name="Select Date" id="select_date">
                     <label for="keywords">Enter the first keywords</label>
                     <input type="password" name="keyword">
                     <button>SEARCH</button>
+                    </form>
+                    
                 </div>
             </div>   
         </section>
@@ -123,6 +127,7 @@
                 
             </div>
         </footer>
-    </div>            
+    </div>  
+    <script src="script.js"></script>          
 </body>
 </html>

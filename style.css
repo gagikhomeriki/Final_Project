@@ -6,8 +6,8 @@ body{
 .container{
     max-width: 1440px;
     width: 100%;
-    border: 2px solid black;
     margin: 0 auto;
+    background-color: #f6f8f9;
 }
 
 header{
@@ -23,7 +23,10 @@ header{
     border-bottom: #f58ea8 solid 4px;
 }
 
-ul{
+.navbar{
+}
+
+.ul_ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,8 +65,11 @@ nav ul li:hover::after{
 nav{
     width: 25%;
     margin-right: 20px;
-    border: 2px solid greenyellow;
 }
+
+/* .burger_menu{
+    display: none;
+} */
 
 
 .Logo_image{
@@ -109,6 +115,10 @@ article{
     width: 70%;
 }
 
+#burger_menu{
+    display: none;
+}
+
 .article_title_header{
     
     font-size: 1.5rem;
@@ -138,7 +148,6 @@ article{
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
-    border: 3px solid greenyellow;
 }
 
 .article_title_section button:hover{
@@ -149,7 +158,7 @@ article{
 }
 
 .news_article{
-    border: 2px solid darkorange;
+    background-color: white;
 
     width: 30%;
     padding: 50px;
@@ -157,7 +166,6 @@ article{
 }
 
 .news_article_header{
-    border: 3px solid greenyellow;
     width: 90%;
     font-size: 1.5rem;
     color: #202124;
@@ -167,18 +175,25 @@ article{
     align-items: center;
 }
 
-.news_article_header_arrow{
-    width: 15%;
-    border: 2px solid red;
-
+/* .news_article_header_arrow{
+    width: 20%;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
 .arrow1{
     border: 2px solid blue;
+} */
+
+.news_article_header_arrow{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .news_article_section{
-    border: 2px solid darkblue;
     width: 60%;
     margin-top: 15px;
 }
@@ -211,7 +226,6 @@ article{
 }
 
 .section_one{
-    border: 2px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -220,7 +234,7 @@ article{
 
 .picture_one{
     width: 30%;
-    border: 2px solid black;
+    background-color: white;
 }
 
 .picture_one h3{
@@ -261,14 +275,12 @@ article{
 }
 
 .section_two{
-    border: 2px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
 }
 
 .pictures_articles{
-    border: 2px solid yellow;
     width: 60%;
     gap: 10px;
 }
@@ -306,7 +318,6 @@ article{
 }
 
 .section_two_box_two{
-    border: 2px solid blue;
     width: 60%;
 
 }
@@ -345,13 +356,11 @@ article{
 }
 
 .section_two_box_two{
-    border: 2px solid blue;
     width: 60%;
 
 }
 
 .section_last{
-    border: 3px solid skyblue;
     width: 40%;
     display: flex;
     align-items: center;
@@ -360,7 +369,6 @@ article{
 
 
 .section_last_boxx{
-    border: 2px solid darkmagenta;
     width: 70%;
 
 }
@@ -381,13 +389,13 @@ footer{
     width: 100%;
     background-color: #a6adb4;
     margin-top: 25px;
+    
 }
 
 .footer_box{
-    border: 2px solid greenyellow;
     width: 90%;
-    padding: 20px;
     margin: 0 auto;
+    padding: 30px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -396,19 +404,15 @@ footer{
 
 a:link { text-decoration: none; }
 
-.footer_nav{
-    
-}
+
 
 
 .footer_nav ul{
     flex-direction: column;
     gap: 5px;
-    border: 2px solid red;
 }
 
 .special_box{
-    border: 2px solid darkblue;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -417,6 +421,7 @@ a:link { text-decoration: none; }
 
 .special_box p{
     color: white;
+    margin-right: 20px;
 }
 
 /* ul{
@@ -437,10 +442,9 @@ a:link { text-decoration: none; }
 } */
 
 .special_box_second{
-    border: 4px solid lightseagreen;
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
 }
 
 #email{
@@ -456,7 +460,6 @@ a:link { text-decoration: none; }
 }
 
 .input_label{
-    border: 2px solid red;
     width: 60%;
 }
 
@@ -466,7 +469,6 @@ a:link { text-decoration: none; }
 }
 
 .social_logos{
-    border: 2px solid black;
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -491,16 +493,13 @@ a:link { text-decoration: none; }
 }
 
 .worldnews_box{
-    padding: 15px;
     width: 80%;
-    margin: 0 auto;
+    margin: 15px auto;
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
 }
 
 .worldnews_box_1{
-    border: 2px solid red;
     display: flex;
     width: 25%;
     justify-content: space-between;
@@ -520,6 +519,10 @@ a:link { text-decoration: none; }
     cursor: pointer;
 }
 
+#burger_menu{
+    display: none;
+}
+
 .worldnews_box_1 p:hover{
     text-shadow: 2px 6px 10px pink;
     font-size:0.750rem ;
@@ -527,7 +530,6 @@ a:link { text-decoration: none; }
 }
 
 .worldnews_box_section{
-    border: 2px solid blanchedalmond;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -558,24 +560,32 @@ a:link { text-decoration: none; }
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    border: 2px solid black;
 }
 
 .worldnews_picture p{
     color: white;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    font-size: 0.813rem;
+    color: #202124;
+    font-weight: bolder;
+    width: 100%;
+}
+
 .worldnews_picture_text_second{
-    border: 2px solid red;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background-color: white;
 }
 
 .boxlabelinput{
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -600,6 +610,7 @@ a:link { text-decoration: none; }
     color: white;
     cursor: pointer;
 }
+
 
 .footer_logo_white{
     color: white;
@@ -648,7 +659,6 @@ a:link { text-decoration: none; }
 .boxbox1{
     width: 30%;
     padding: 20px;
-    border: 3px solid red;
 }
 
 .boxbox1 p{
@@ -675,7 +685,6 @@ a:link { text-decoration: none; }
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
-    border: 3px solid red;
 }
 
 .worldnewssection_second_text{
@@ -688,7 +697,6 @@ a:link { text-decoration: none; }
     padding: 20px;
     color: #a6adb4;
     font-size: 0.875rem;
-    border: 2px solid red;
 }
 
 .worldnewssection_second_line{
@@ -749,6 +757,10 @@ a:link { text-decoration: none; }
     .section_two{
         display: flex;
         flex-direction: column;
+    }
+
+    #burger_menu{
+        display: none;
     }
 
     .pictures_articles{
@@ -937,6 +949,7 @@ a:link { text-decoration: none; }
    
     .worldnews_box{
         flex-direction: row-reverse;
+        display: none;
     }
 
     .worldnews_picture{
@@ -1001,5 +1014,33 @@ a:link { text-decoration: none; }
     .worldnewssection_second_line{
         width: 90%;
     }
+
+    #burger_menu{
+        display: flex;
+        border: 2px solid black;
+        width: 8%;
+        margin-right: 20px;
+    }
     
+    ul{
+        flex-direction: row-reverse;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .ul_ul{
+        position: fixed;
+        top: 82px;
+        flex-direction: column;
+        background-color: gray;
+        width: 100%;
+        transform: 0.3;
+    }
+
+    .ul_ul.active{
+        left: 0;
+
+    }
 }
