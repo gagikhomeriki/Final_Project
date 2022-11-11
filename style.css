@@ -1,3 +1,8 @@
+body{
+    overflow-x:hidden;
+}
+
+
 .container{
     max-width: 1440px;
     width: 100%;
@@ -125,6 +130,7 @@ article{
 }
 
 .article_title_section button{
+    color: white;
     width: 25%;
     padding: 10px;
     border: none;
@@ -132,6 +138,7 @@ article{
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
+    border: 3px solid greenyellow;
 }
 
 .article_title_section button:hover{
@@ -150,6 +157,7 @@ article{
 }
 
 .news_article_header{
+    border: 3px solid greenyellow;
     width: 90%;
     font-size: 1.5rem;
     color: #202124;
@@ -161,7 +169,12 @@ article{
 
 .news_article_header_arrow{
     width: 15%;
-    
+    border: 2px solid red;
+
+}
+
+.arrow1{
+    border: 2px solid blue;
 }
 
 .news_article_section{
@@ -233,6 +246,7 @@ article{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: bolder;
 }
 
 .picture_one_image{
@@ -348,6 +362,7 @@ article{
 .section_last_boxx{
     border: 2px solid darkmagenta;
     width: 70%;
+
 }
 
 .section_last_boxx h3{
@@ -422,7 +437,7 @@ a:link { text-decoration: none; }
 } */
 
 .special_box_second{
-    border: 2px solid lightseagreen;
+    border: 4px solid lightseagreen;
     width: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -481,6 +496,7 @@ a:link { text-decoration: none; }
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    border: 2px solid red;
 }
 
 .worldnews_box_1{
@@ -542,6 +558,7 @@ a:link { text-decoration: none; }
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    border: 2px solid black;
 }
 
 .worldnews_picture p{
@@ -631,6 +648,7 @@ a:link { text-decoration: none; }
 .boxbox1{
     width: 30%;
     padding: 20px;
+    border: 3px solid red;
 }
 
 .boxbox1 p{
@@ -657,17 +675,20 @@ a:link { text-decoration: none; }
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
+    border: 3px solid red;
 }
 
 .worldnewssection_second_text{
     width: 80%;
     margin: 30px auto;
+    width: 3px solid red;
 }
 
 .worldnewssection_second_text P{
     padding: 20px;
     color: #a6adb4;
     font-size: 0.875rem;
+    border: 2px solid red;
 }
 
 .worldnewssection_second_line{
@@ -822,4 +843,163 @@ a:link { text-decoration: none; }
     .boxlabelinput{
         width: 100%;
     }
+}
+
+/* აქ დასრულდა პირველი რესპონსივი */
+
+@media (max-width:375px) {
+    ul{
+        display: none;
+    }
+
+    .article_background{
+        height: 388px;
+    }
+    
+    .article_title_section button{
+        width: 60%;
+    }
+
+    .news_article_header_arrow{
+        width: 30%;
+        height: 50px;
+    }
+
+    .news_article{
+        padding: 15px;
+    }
+
+    .news_article_section{
+        width: 90%;
+    }
+   
+    .section_one{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .trending_line{
+        width: 80%;
+    }
+
+    .picture_one{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .section_last{
+        margin-top: 50px;
+    }
+
+    .section_last_boxx{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_last_boxx h3{
+        display: flex;
+        font-weight: bolder;
+    }
+
+    .news_article_section_time{
+        display: flex;
+    }
+
+    #spilo{
+        width: 100%;
+    }
+
+    #chiti{
+        width: 100%;
+    }
+
+    #mesame_photo{
+        display: flex;
+        width: 100%;
+    }
+
+    .special_box{
+        display: none;
+    }
+
+    .input_label{
+        display: none;
+    }
+
+    .social_logos{
+        width: 65%;
+        margin: 30px auto;
+    }
+
+    .worldnews_box_1{
+        display: none;
+    }
+   
+    .worldnews_box{
+        flex-direction: row-reverse;
+    }
+
+    .worldnews_picture{
+        height: 388px;
+    }
+
+    .worldnews_box_section{
+        width: 100%;
+    }
+
+    .worldnews_picture_text{
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    .worldnews_picture_text p{
+        margin: 20px auto;
+    }
+    
+    .pinkline{
+        margin: 20px auto;
+    }
+
+    .worldnews_picture_text_second{
+        width: 90%;
+    }
+
+    .boxlabelinput button{
+        margin-top: 20px;
+    }
+
+    .boxbox{
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .boxbox1{
+        width: 85%;
+        font-weight: bolder;
+    }
+
+    .boxbox2{
+        width: 100%;
+        margin: 20px auto;
+        font-size: 0.875rem;
+    }
+
+    .worldnewssection_second{
+        height: 187px;
+        width: 90%;
+    }
+
+    .worldnewssection_second_text{
+        width: 90%;
+    }
+
+    .worldnewssection_second_text p{
+        padding: 0px;
+    }
+
+    .worldnewssection_second_line{
+        width: 90%;
+    }
+    
 }
